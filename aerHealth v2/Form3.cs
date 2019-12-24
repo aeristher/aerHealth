@@ -151,7 +151,7 @@ namespace aerHealth_v2
 
 
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("pittcist@gmail.com");
+            mail.From = new MailAddress("your_email_here");
             mail.To.Add(new MailAddress(strEmail));
             mail.Subject = "Welcome to aerHealth";
             mail.Body = "Congratulations, " + strUser + "!!!" + "\n" + "You are one step closer to getting the best care that you deserve!" +
@@ -170,7 +170,7 @@ namespace aerHealth_v2
             smtp.EnableSsl = true;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = false;
-            smtp.Credentials = new NetworkCredential("pittcist@gmail.com", "pittcist0265");
+            smtp.Credentials = new NetworkCredential("your_email_here", "your_password_here");
 
             try
             {
